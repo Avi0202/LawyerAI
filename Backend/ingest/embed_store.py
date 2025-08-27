@@ -11,7 +11,7 @@ qdrant.recreate_collection(
     collection_name="indian_law",
     vectors_config=VectorParams(size=384, distance="Cosine")
 )
-# Embeddings model (use same one as in app.deps)
+# Embeddings model 
 embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
 def store_chunks(chunks, source="unknown", collection_name="indian_law"):

@@ -13,12 +13,15 @@ torch>=1.13.0
 openai>=1.30.0
 
 # Utils
-pydantic>=2.6,<3.0   # 🔄 upgrade to v2 (works with FastAPI >=0.100 and Qdrant >=1.7)
-pydantic-core>=2.6    # 🔄 required for pydantic v2
-python-multipart==0.0.9  # For file uploads if needed
+pydantic>=2.6,<3.0   
+pydantic-core>=2.6    
+# python-multipart==0.0.9  # For file uploads if needed
 
 # Optional: audio processing if you want to use Whisper locally
-soundfile==0.12.1
-pydub==0.25.1
+# soundfile==0.12.1
+# pydub==0.25.1
 
 python-docx==0.8.11
+
+
+streamlit

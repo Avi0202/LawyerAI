@@ -40,7 +40,7 @@ def generate_answer(query: str, context: str) -> str:
                     - Do not say you are an AI system.
             """
     response = client.chat.completions.create(
-        model="gemini-2.5-flash-lite",   # change model here easily
+        model="gemini-2.5-flash-lite",   
         messages=[
             {"role": "user", "content": prompt}
         ],

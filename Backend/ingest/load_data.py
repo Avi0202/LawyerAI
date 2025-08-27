@@ -10,7 +10,7 @@ def read_docx(path):
     doc = Document(path)
     full_text = []
     for para in doc.paragraphs:
-        if para.text.strip():  # store non-empty paragraphs
+        if para.text.strip():  
             full_text.append(para.text.strip())
     return "\n".join(full_text)
 
@@ -29,7 +29,7 @@ for filename in os.listdir(data_dir):
         continue
 
     # Chunk + store into Qdrant
-    chunks = chunk_text(text, max_length=500)  #list of chunks
-    law_name = os.path.splitext(filename)[0]   # remove extension
+    chunks = chunk_text(text, max_length=500) 
+    law_name = os.path.splitext(filename)[0]   
     store_chunks(chunks, source=law_name)
     print(f"✅ Ingested '{law_name}' with {len(chunks)} chunks into Qdrant.")
