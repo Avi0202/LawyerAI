@@ -1,0 +1,24 @@
+# Core API
+fastapi==0.111.0
+uvicorn[standard]==0.30.0
+
+# Vector DB Client
+qdrant-client==1.15.1
+
+# Embeddings
+sentence-transformers==2.7.0
+torch>=1.13.0
+
+# OpenAI API
+openai>=1.30.0
+
+# Utils
+pydantic>=2.6,<3.0   # 🔄 upgrade to v2 (works with FastAPI >=0.100 and Qdrant >=1.7)
+pydantic-core>=2.6    # 🔄 required for pydantic v2
+python-multipart==0.0.9  # For file uploads if needed
+
+# Optional: audio processing if you want to use Whisper locally
+soundfile==0.12.1
+pydub==0.25.1
+
+python-docx==0.8.11
