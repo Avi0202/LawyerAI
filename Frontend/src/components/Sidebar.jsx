@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {FiChevronLeft, FiChevronRight} from "react-icons/fi"
 import "./Sidebar.css";
 const Sidebar = () => {
 
@@ -9,7 +10,7 @@ const Sidebar = () => {
   return (
     <div className={`sidebar ${isOpen?"open":""}`}>
       <button className="collapse-btn" onClick={toggleSidebar}>
-        {isOpen?">>":"<<"}</button>
+        {isOpen?<FiChevronRight/>:<FiChevronLeft/>}</button>
       
     </div>
   );
