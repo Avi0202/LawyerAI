@@ -1,0 +1,43 @@
+.chatbox {
+  display: flex;
+  align-items: center;
+  background: #1e1c24;          
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  max-width: 800px;            
+  margin: 20px auto;
+}
+
+.chat-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px;
+  outline: none;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.icon-btn:hover {
+  color: #fff;                 
+  transform: scale(1.1);
+}
+
+.send-btn {
+  margin-left: 8px;
+  color: #9a87ff;              
+}
+
+.mic-btn {
+  margin-right: 8px;
+}
